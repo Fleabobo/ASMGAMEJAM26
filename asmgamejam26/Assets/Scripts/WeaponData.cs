@@ -9,6 +9,7 @@ public class WeaponData : ScriptableObject
     public AnimatorOverrideController animatorOverride;
     public float damage;
     public float attackSpeed;
+    public float range = 1.5f;   // how far this weapon can hit — should beat monster attackRange
 
     [Header("Hip Position (normal carry position)")]
     public Vector3 modelPositionOffset;
@@ -17,7 +18,7 @@ public class WeaponData : ScriptableObject
     [Header("Aim Position (while holding right click)")]
     public Vector3 aimPositionOffset;
     public Vector3 aimRotationOffset;
-    public float aimSpeed = 8f; // how fast it blends into aim, higher = snappier
+    public float aimSpeed = 8f;
 }
 
 public enum WeaponType
