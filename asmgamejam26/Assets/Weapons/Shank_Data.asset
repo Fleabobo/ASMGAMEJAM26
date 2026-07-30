@@ -16,7 +16,7 @@ MonoBehaviour:
   type: 0
   modelPrefab: {fileID: 689422745114737749, guid: b3b0e25789a502040b9db4d7b43da830, type: 3}
   animatorOverride: {fileID: 0}
-  damage: 0
+  damage: 20
   attackSpeed: 0
   modelPositionOffset: {x: 0.65, y: 0.34, z: 0.5}
   modelRotationOffset: {x: 90, y: 0, z: 270}
