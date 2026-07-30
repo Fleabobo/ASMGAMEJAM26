@@ -612,7 +612,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -622,21 +622,21 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Gamejam\ASMGAMEJAM26\asmgamejam26
+  m_LastProjectPath: J:\GitHub\ASMGAMEJAM26\asmgamejam26
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_rawData: 568105584918838780
+    - m_rawData: 568105584918846478
     m_LastClickedID:
-      m_rawData: 568105584918838780
+      m_rawData: 568105584918846478
     m_ExpandedIDs:
     - m_rawData: 0
-    - m_rawData: 568105584918838780
+    - m_rawData: 568105584918838788
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -670,7 +670,7 @@ MonoBehaviour:
       m_rawData: 0
     m_ExpandedIDs:
     - m_rawData: 0
-    - m_rawData: 568105584918838780
+    - m_rawData: 568105584918838788
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -698,11 +698,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_rawData: 568105584918838308
+    m_SelectedInstanceIDs: []
     m_LastClickedEntityId:
-      m_rawData: 568105584918838308
-    m_HadKeyboardFocusLastEvent: 0
+      m_rawData: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -721,7 +720,7 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_EntityId:
@@ -835,7 +834,8 @@ MonoBehaviour:
       m_LastClickedID:
         m_rawData: 0
       m_ExpandedIDs:
-      - m_rawData: 568105589213756068
+      - m_rawData: 568105589213707222
+      - m_rawData: 568105589213711148
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -853,7 +853,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootEntityId:
@@ -1291,9 +1291,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -6.3054404, y: 4.806853, z: -2.7025745}
+    m_Target: {x: 7.047398, y: -1.1044146, z: -0.48832977}
     speed: 2
-    m_Value: {x: -6.3054404, y: 4.806853, z: -2.7025745}
+    m_Value: {x: 7.047398, y: -1.1044146, z: -0.48832977}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1340,20 +1340,20 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: 0.10940363, y: 0.81777287, z: -0.1656087, w: 0.54023296}
+    m_Target: {x: 0.07685867, y: 0.7324138, z: -0.08386265, w: 0.671315}
     speed: 2
-    m_Value: {x: 0.109403625, y: 0.8177728, z: -0.16560869, w: 0.54023296}
+    m_Value: {x: 0.07685867, y: 0.7324138, z: -0.08386265, w: 0.671315}
   m_Size:
-    m_Target: 10
+    m_Target: 6.785808
     speed: 2
-    m_Value: 10
+    m_Value: 6.785808
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 2
-    m_SpeedNormalized: 1
+    m_Speed: 1.6001997
+    m_SpeedNormalized: 0.79999983
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
