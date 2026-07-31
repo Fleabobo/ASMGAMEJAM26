@@ -2213,7 +2213,7 @@ PrefabInstance:
     - target: {fileID: 4574657524432881281, guid: adec4f35f62211848a0924ab8d497df6, type: 3}
       propertyPath: testWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 22ee82010cdeb5545bedaca9916db173, type: 2}
+      objectReference: {fileID: 11400000, guid: 6602dc1565aa2ce4d94c74f201a570aa, type: 2}
     - target: {fileID: 4574657524432881281, guid: adec4f35f62211848a0924ab8d497df6, type: 3}
       propertyPath: weaponAnimator
       value: 
@@ -2900,7 +2900,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.90440375, b: 0.6839622, a: 1}
   m_Intensity: 2800
   m_Range: 30
   m_SpotAngle: 50

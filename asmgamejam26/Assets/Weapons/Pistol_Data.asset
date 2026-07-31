@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: Pistol
   type: 1
   modelPrefab: {fileID: 2930622481023241631, guid: 3d33607ec4ea14749b5f03092b71f315, type: 3}
-  animatorOverride: {fileID: 0}
+  animatorOverride: {fileID: 22100000, guid: 43cbdc81913e9404fb0869146aed61ef, type: 2}
   damage: 40
   attackSpeed: 0
   range: 1.5

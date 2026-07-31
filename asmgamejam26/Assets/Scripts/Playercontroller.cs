@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem; // Uses the New Input System package
 
@@ -14,12 +13,6 @@ public class Playercontroller : MonoBehaviour
     public float mouseSensitivity = 0.1f;
     public float maxLookAngle = 80.0f;
 
-    [Header("Combat & Slash Settings")]
-    public float attackRange = 2.5f;
-    public float attackCooldown = 0.35f;
-    public GameObject slashUIOverlay;
-    public LayerMask enemyLayer;
-
     [Header("Flashlight Settings")]
     public Light flashlight;
 
@@ -27,7 +20,6 @@ public class Playercontroller : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private float cameraPitch = 0.0f;
-    private bool canAttack = true;
 
     void Start()
     {
@@ -36,9 +28,6 @@ public class Playercontroller : MonoBehaviour
         // Lock cursor to screen center
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        if (slashUIOverlay != null)
-            slashUIOverlay.SetActive(false);
     }
 
     void Update()
@@ -46,20 +35,16 @@ public class Playercontroller : MonoBehaviour
         HandleLook();
         HandleMovement();
         HandleFlashlight();
-        HandleAttack();
     }
 
     void HandleLook()
     {
         if (cameraTransform == null || Mouse.current == null) return;
 
-        // New Input System mouse delta
         Vector2 mouseDelta = Mouse.current.delta.ReadValue() * mouseSensitivity;
 
-        // Rotate body horizontally
         transform.Rotate(Vector3.up * mouseDelta.x);
 
-        // Clamp vertical camera look
         cameraPitch -= mouseDelta.y;
         cameraPitch = Mathf.Clamp(cameraPitch, -maxLookAngle, maxLookAngle);
         cameraTransform.localRotation = Quaternion.Euler(cameraPitch, 0f, 0f);
@@ -75,7 +60,6 @@ public class Playercontroller : MonoBehaviour
 
         if (Keyboard.current == null) return;
 
-        // Read WASD keys from New Input System
         float x = 0f;
         float z = 0f;
 
@@ -87,65 +71,15 @@ public class Playercontroller : MonoBehaviour
         Vector3 move = (transform.right * x + transform.forward * z).normalized;
         controller.Move(move * moveSpeed * Time.deltaTime);
 
-        // Apply Gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
 
     void HandleFlashlight()
     {
-        // Toggle flashlight on 'F' key press
         if (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame && flashlight != null)
         {
             flashlight.enabled = !flashlight.enabled;
-        }
-    }
-
-    void HandleAttack()
-    {
-        // Left Mouse Click check in New Input System
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame && canAttack)
-        {
-            StartCoroutine(PerformSlash());
-        }
-    }
-
-    IEnumerator PerformSlash()
-    {
-        canAttack = false;
-
-        if (slashUIOverlay != null)
-            slashUIOverlay.SetActive(true);
-
-        DetectHit();
-
-        yield return new WaitForSeconds(0.12f);
-
-        if (slashUIOverlay != null)
-            slashUIOverlay.SetActive(false);
-
-        yield return new WaitForSeconds(attackCooldown - 0.12f);
-        canAttack = true;
-    }
-
-    void DetectHit()
-    {
-        RaycastHit hit;
-        Vector3 rayOrigin = cameraTransform.position;
-        Vector3 rayDirection = cameraTransform.forward;
-
-        if (Physics.Raycast(rayOrigin, rayDirection, out hit, attackRange, enemyLayer))
-        {
-            Debug.Log("Hit: " + hit.collider.name);
-        }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (cameraTransform != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(cameraTransform.position, cameraTransform.forward * attackRange);
         }
     }
 }

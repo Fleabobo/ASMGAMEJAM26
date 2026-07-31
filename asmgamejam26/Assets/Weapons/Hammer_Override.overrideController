@@ -6,8 +6,8 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shank_Override
+  m_Name: Hammer_Override
   m_Controller: {fileID: 9100000, guid: 967017135d1edbd42b31b3cee4feb525, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: ec771b4847a07be4fa31a8fdb9df072d, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: ec771b4847a07be4fa31a8fdb9df072d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6c6daa13a7627394995b0e6c48e35bad, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6c6daa13a7627394995b0e6c48e35bad, type: 2}

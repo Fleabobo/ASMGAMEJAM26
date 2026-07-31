@@ -72,7 +72,7 @@ public class WeaponHolder : MonoBehaviour
         currentModel.transform.localPosition = newWeapon.modelPositionOffset;
         currentModel.transform.localRotation = Quaternion.Euler(newWeapon.modelRotationOffset);
 
-        // Animator now lives on the child mesh object, not the root, so search children too
+        // Animator lives on the child mesh object, not the root, so search children too
         currentAnimator = currentModel.GetComponentInChildren<Animator>();
         if (currentAnimator == null)
         {
@@ -81,6 +81,11 @@ public class WeaponHolder : MonoBehaviour
         else if (newWeapon.animatorOverride != null)
         {
             currentAnimator.runtimeAnimatorController = newWeapon.animatorOverride;
+            Debug.Log("Equipped " + newWeapon.weaponName + " with override: " + newWeapon.animatorOverride.name);
+        }
+        else
+        {
+            Debug.LogWarning(newWeapon.weaponName + " has NO Animator Override assigned in its WeaponData!");
         }
 
         currentWeaponData = newWeapon;

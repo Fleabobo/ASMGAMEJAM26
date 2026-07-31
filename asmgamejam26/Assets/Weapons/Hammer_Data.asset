@@ -20,9 +20,9 @@ MonoBehaviour:
   attackSpeed: 0
   range: 1.5
   modelPositionOffset: {x: 0.5, y: 0.3, z: 1}
-  modelRotationOffset: {x: -90, y: 90, z: 0}
+  modelRotationOffset: {x: -90, y: -90, z: 0}
   aimPositionOffset: {x: 0.5, y: 0.3, z: 1}
-  aimRotationOffset: {x: -90, y: 90, z: 0}
+  aimRotationOffset: {x: -90, y: -90, z: 0}
   aimSpeed: 8
   swingSound: {fileID: 8300000, guid: 9c93ddc637a787745a64e20cd65d3b7b, type: 3}
   hitSound: {fileID: 8300000, guid: 6eb82abfffd347948b34e25074762837, type: 3}
