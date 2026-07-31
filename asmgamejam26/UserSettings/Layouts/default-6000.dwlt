@@ -697,9 +697,22 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
       - m_rawData: 568105584918840746
+      - m_rawData: 568105584918842460
       m_LastClickedID:
-        m_rawData: 0
+        m_rawData: 568105584918842460
       m_ExpandedIDs:
+      - m_rawData: 568105589213733734
+      - m_rawData: 568105589213733872
+      - m_rawData: 568105589213734342
+      - m_rawData: 568105589213736436
+      - m_rawData: 568105589213737228
+      - m_rawData: 568105589213739330
+      - m_rawData: 568105589213750790
+      - m_rawData: 568105589213755006
+      - m_rawData: 568105589213755022
+      - m_rawData: 568105589213756048
+      - m_rawData: 568105589213756052
+      - m_rawData: 568105589213756054
       - m_rawData: 568105589213731426
       - m_rawData: 568105589213733592
       - m_rawData: 568105589213735830
@@ -1269,9 +1282,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 17.836845, y: -51.90201, z: 22.776396}
+    m_Target: {x: -13.748991, y: -2.4862757, z: 1.7307607}
     speed: 2
-    m_Value: {x: 17.836845, y: -51.90201, z: 22.776396}
+    m_Value: {x: -13.748991, y: -2.4862757, z: 1.7307607}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1318,13 +1331,13 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: 0.013656813, y: 0.9796769, z: -0.18619253, w: 0.072201245}
+    m_Target: {x: 0.1161374, y: -0.61476946, z: 0.092166826, w: 0.7746762}
     speed: 2
-    m_Value: {x: 0.013937243, y: 0.9796488, z: -0.18618728, w: 0.07367679}
+    m_Value: {x: 0.11544016, y: -0.62054753, z: 0.09303306, w: 0.7700255}
   m_Size:
-    m_Target: 248.0257
+    m_Target: 9.331161
     speed: 2
-    m_Value: 237.34517
+    m_Value: 8.92934
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1412,6 +1425,7 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
     - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1422,6 +1436,7 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Gamejam\ASMGAMEJAM26\asmgamejam26
   m_LockTracker:
@@ -1431,12 +1446,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
     - m_rawData: 568105584918839958
+    - m_rawData: 568105584918839500
     m_LastClickedID:
       m_rawData: 568105584918839958
     m_ExpandedIDs:
     - m_rawData: 568105589213755102
+    - m_rawData: 568105589213755322
     - m_rawData: 0
     - m_rawData: 568105584918839848
+    - m_rawData: 568105584918839186
     - m_rawData: 568105587066273791
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1500,6 +1518,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs:
     - m_rawData: 568105584918840746
+    - m_rawData: 568105584918842460
     m_LastClickedEntityId:
       m_rawData: 568105584918840746
     m_HadKeyboardFocusLastEvent: 1
