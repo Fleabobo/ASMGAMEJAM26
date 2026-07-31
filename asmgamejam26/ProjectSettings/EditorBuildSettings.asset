@@ -18,7 +18,22 @@ EditorBuildSettings:
     path: Assets/Scenes/leevi_entities.unity
     guid: 2d9bc4b14709e664bb90154c0706999f
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/testlevel.unity
     guid: 397f196b0edf50440a02818cdc70c125
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 5acd5d01141d0814baa232141006f67c
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 4b158f03ad9008442bb0f9822c89a805
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 90c4ebf7ca2b20a41b596cd04ed19df7
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: f4073783c6f8db449933c9552a426233
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 27f2e64ad14bc5c45b13158466db9e34
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
