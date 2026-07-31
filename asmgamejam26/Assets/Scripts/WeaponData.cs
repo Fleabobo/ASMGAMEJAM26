@@ -9,7 +9,7 @@ public class WeaponData : ScriptableObject
     public AnimatorOverrideController animatorOverride;
     public float damage;
     public float attackSpeed;
-    public float range = 1.5f;
+    public float range = 1.5f; // only used for melee raycast
 
     [Header("Hip Position (normal carry position)")]
     public Vector3 modelPositionOffset;
@@ -30,6 +30,12 @@ public class WeaponData : ScriptableObject
     public float reloadDuration = 2f;
     public AudioClip reloadSound;
     public Vector3 reloadPositionOffset;
+
+    [Header("Projectile (for firearms that shoot physical bullets)")]
+    public bool firesProjectile = false;
+    public GameObject projectilePrefab;
+    public float projectileSpeed = 40f;
+    public float projectileLifetime = 5f;
 }
 
 public enum WeaponType
