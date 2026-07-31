@@ -14,12 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
   weaponName: Scythe
   type: 0
-  modelPrefab: {fileID: 2245596255429488215, guid: 93fe88a4d581ed84483a7ba83030f06d, type: 3}
+  modelPrefab: {fileID: 7827190779142572549, guid: c2f6207ff0f92384aa90cefc57aa8d75, type: 3}
   animatorOverride: {fileID: 0}
   damage: 40
   attackSpeed: 0
+  range: 1.5
   modelPositionOffset: {x: 0, y: -0.2, z: 1.3}
-  modelRotationOffset: {x: 180, y: 180, z: 0}
+  modelRotationOffset: {x: 0, y: 0, z: 0}
   aimPositionOffset: {x: 0, y: 0, z: 0}
-  aimRotationOffset: {x: 180, y: 180, z: 0}
+  aimRotationOffset: {x: 0, y: 0, z: 0}
   aimSpeed: 8
+  swingSound: {fileID: 8300000, guid: cc036ce892e6d534cad9d5ffe7be1701, type: 3}
+  hitSound: {fileID: 8300000, guid: 6eb82abfffd347948b34e25074762837, type: 3}
+  usesAmmo: 0
+  maxAmmo: 6
+  reloadDuration: 2
+  reloadSound: {fileID: 0}
+  reloadPositionOffset: {x: 0, y: 0, z: 0}
