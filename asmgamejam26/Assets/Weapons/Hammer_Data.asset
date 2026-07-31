@@ -14,12 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
   weaponName: Hammer
   type: 0
-  modelPrefab: {fileID: 3155518124592213896, guid: 4680a411d5794aa4cad9ae6ccb416561, type: 3}
+  modelPrefab: {fileID: 5715651185971223879, guid: 67197f0945544e347b87bda15d3ff49d, type: 3}
   animatorOverride: {fileID: 0}
   damage: 45
   attackSpeed: 0
+  range: 1.5
   modelPositionOffset: {x: 0.5, y: 0.3, z: 1}
   modelRotationOffset: {x: -90, y: 90, z: 0}
   aimPositionOffset: {x: 0.5, y: 0.3, z: 1}
   aimRotationOffset: {x: -90, y: 90, z: 0}
   aimSpeed: 8
+  swingSound: {fileID: 8300000, guid: 9c93ddc637a787745a64e20cd65d3b7b, type: 3}
+  hitSound: {fileID: 8300000, guid: 6eb82abfffd347948b34e25074762837, type: 3}
+  usesAmmo: 0
+  maxAmmo: 6
+  reloadDuration: 2
+  reloadSound: {fileID: 0}
+  reloadPositionOffset: {x: 0, y: 0, z: 0}

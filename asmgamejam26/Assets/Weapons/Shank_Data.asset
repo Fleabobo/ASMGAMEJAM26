@@ -14,12 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
   weaponName: Shank
   type: 0
-  modelPrefab: {fileID: 689422745114737749, guid: b3b0e25789a502040b9db4d7b43da830, type: 3}
+  modelPrefab: {fileID: 7360950642200350615, guid: 7b57df2d91d61c2499b8bd213f12157c, type: 3}
   animatorOverride: {fileID: 0}
   damage: 20
   attackSpeed: 0
-  modelPositionOffset: {x: 0.65, y: 0.34, z: 0.5}
-  modelRotationOffset: {x: 90, y: 0, z: 270}
-  aimPositionOffset: {x: 0.65, y: 0.34, z: 0.5}
-  aimRotationOffset: {x: 90, y: 0, z: 270}
+  range: 1.5
+  modelPositionOffset: {x: 0.3, y: 0.35, z: 0.7}
+  modelRotationOffset: {x: 90, y: 0, z: 0}
+  aimPositionOffset: {x: 0.3, y: 0.35, z: 0.7}
+  aimRotationOffset: {x: 90, y: 0, z: 0}
   aimSpeed: 8
+  swingSound: {fileID: 8300000, guid: cc036ce892e6d534cad9d5ffe7be1701, type: 3}
+  hitSound: {fileID: 8300000, guid: 6eb82abfffd347948b34e25074762837, type: 3}
+  usesAmmo: 0
+  maxAmmo: 6
+  reloadDuration: 2
+  reloadSound: {fileID: 0}
+  reloadPositionOffset: {x: 0, y: 0, z: 0}

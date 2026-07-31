@@ -7,8 +7,12 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
 
     [Header("Regen Settings")]
-    public float regenDelay = 10f;      // seconds after last hit before regen starts
-    public float regenRate = 5f;        // health per second while regenerating
+    public float regenDelay = 10f;
+    public float regenRate = 5f;
+
+    [Header("Sound")]
+    public AudioSource audioSource;   // add an AudioSource component and drag it here
+    public AudioClip damageSound;
 
     private float timeSinceLastHit;
 
@@ -21,19 +25,23 @@ public class PlayerHealth : MonoBehaviour
     {
         timeSinceLastHit += Time.deltaTime;
 
-        // Only regen if enough time has passed since last hit, and not already full
         if (timeSinceLastHit >= regenDelay && currentHealth < maxHealth)
         {
             currentHealth += regenRate * Time.deltaTime;
-            currentHealth = Mathf.Min(currentHealth, maxHealth); // don't overshoot
+            currentHealth = Mathf.Min(currentHealth, maxHealth);
         }
     }
 
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        currentHealth = Mathf.Max(currentHealth, 0f); // don't go below 0
-        timeSinceLastHit = 0f; // reset regen timer every time we get hit
+        currentHealth = Mathf.Max(currentHealth, 0f);
+        timeSinceLastHit = 0f;
+
+        if (audioSource != null && damageSound != null)
+        {
+            audioSource.PlayOneShot(damageSound);
+        }
 
         if (currentHealth <= 0f)
         {
@@ -44,6 +52,5 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player died");
-        // add death logic here later (restart level, show game over screen, etc.)
     }
 }

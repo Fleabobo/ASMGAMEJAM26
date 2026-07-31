@@ -14,12 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
   weaponName: Pistol
   type: 1
-  modelPrefab: {fileID: 2817342162377798739, guid: 40a685686532f8c43be1f4c6373fe9dc, type: 3}
+  modelPrefab: {fileID: 2930622481023241631, guid: 3d33607ec4ea14749b5f03092b71f315, type: 3}
   animatorOverride: {fileID: 0}
   damage: 40
   attackSpeed: 0
+  range: 1.5
   modelPositionOffset: {x: 0.65, y: 0.34, z: 0.7}
   modelRotationOffset: {x: 0, y: 0, z: 0}
   aimPositionOffset: {x: 0, y: 0.34, z: 0.5}
   aimRotationOffset: {x: 0, y: 0, z: 0}
   aimSpeed: 8
+  swingSound: {fileID: 8300000, guid: 0e50a867ed318bc43acaa69f0ba18c94, type: 3}
+  hitSound: {fileID: 8300000, guid: 6eb82abfffd347948b34e25074762837, type: 3}
+  usesAmmo: 1
+  maxAmmo: 6
+  reloadDuration: 3
+  reloadSound: {fileID: 8300000, guid: b60477accc3747f4ab6658a7ab3f2e96, type: 3}
+  reloadPositionOffset: {x: 0, y: 0, z: 0}
