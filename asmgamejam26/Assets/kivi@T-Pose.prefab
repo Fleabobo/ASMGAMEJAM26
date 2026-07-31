@@ -85,5 +85,5 @@ MonoBehaviour:
   monsterAnimator: {fileID: 0}
   moveSpeed: 2
   attackRange: 1.2
-  attackDamage: 30
+  attackDamage: 1
   attackCooldown: 1.5

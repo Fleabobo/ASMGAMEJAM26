@@ -11,7 +11,7 @@ public class MonsterAI : MonoBehaviour
 
     [Header("Attack")]
     public float attackRange = 1.2f;    // how close it needs to be to hit player
-    public float attackDamage = 30f;
+    public float attackDamage = 1f;
     public float attackCooldown = 1.5f; // seconds between hits
 
     private float attackTimer;

@@ -1,56 +1,97 @@
+using System;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
     [Header("Health Settings")]
-    public float maxHealth = 100f;
-    public float currentHealth;
-
-    [Header("Regen Settings")]
-    public float regenDelay = 10f;
-    public float regenRate = 5f;
+    [Min(1)]
+    public int maxHearts = 5;
+    [SerializeField, Min(0)]
+    private int currentHearts;
 
     [Header("Sound")]
-    public AudioSource audioSource;   // add an AudioSource component and drag it here
+    public AudioSource audioSource;
     public AudioClip damageSound;
 
-    private float timeSinceLastHit;
+    public int CurrentHearts => currentHearts;
+    public event Action<int, int> HealthChanged;
+    public event Action Died;
 
-    void Start()
+    private bool isDead;
+
+    private void Awake()
     {
-        currentHealth = maxHealth;
+        maxHearts = Mathf.Max(1, maxHearts);
+        currentHearts = maxHearts;
     }
 
-    void Update()
+    private void Start()
     {
-        timeSinceLastHit += Time.deltaTime;
-
-        if (timeSinceLastHit >= regenDelay && currentHealth < maxHealth)
-        {
-            currentHealth += regenRate * Time.deltaTime;
-            currentHealth = Mathf.Min(currentHealth, maxHealth);
-        }
+        HealthChanged?.Invoke(currentHearts, maxHearts);
     }
 
     public void TakeDamage(float amount)
     {
-        currentHealth -= amount;
-        currentHealth = Mathf.Max(currentHealth, 0f);
-        timeSinceLastHit = 0f;
+        if (isDead || amount <= 0f)
+        {
+            return;
+        }
+
+        int heartsToLose = Mathf.Max(1, Mathf.CeilToInt(amount));
+        SetHearts(currentHearts - heartsToLose);
 
         if (audioSource != null && damageSound != null)
         {
             audioSource.PlayOneShot(damageSound);
         }
 
-        if (currentHealth <= 0f)
+        if (currentHearts == 0)
         {
             Die();
         }
     }
 
-    void Die()
+    public void Heal(int amount = 1)
     {
-        Debug.Log("Player died");
+        if (isDead || amount <= 0)
+        {
+            return;
+        }
+
+        SetHearts(currentHearts + amount);
+    }
+
+    public void RestoreFullHealth()
+    {
+        if (isDead)
+        {
+            return;
+        }
+
+        SetHearts(maxHearts);
+    }
+
+    private void SetHearts(int value)
+    {
+        int clampedValue = Mathf.Clamp(value, 0, maxHearts);
+        if (clampedValue == currentHearts)
+        {
+            return;
+        }
+
+        currentHearts = clampedValue;
+        HealthChanged?.Invoke(currentHearts, maxHearts);
+    }
+
+    private void Die()
+    {
+        if (isDead)
+        {
+            return;
+        }
+
+        isDead = true;
+        Debug.Log("Player died", this);
+        Died?.Invoke();
     }
 }
