@@ -154,6 +154,7 @@ GameObject:
   - component: {fileID: 5314576786509223736}
   - component: {fileID: 5053949298879502068}
   - component: {fileID: 8655394254498468040}
+  - component: {fileID: 6991419077809952759}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -341,12 +342,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5181fcbfe2ac0d34794783313c37fe34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 100
-  currentHealth: 0
-  regenDelay: 10
-  regenRate: 5
+  maxHearts: 5
+  currentHearts: 5
   audioSource: {fileID: 0}
   damageSound: {fileID: 0}
+--- !u!114 &6991419077809952759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437976944787413780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28de95633b1a7b1498822135463d913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthHUD
+  heartFontSize: 72
+  fullHeartColor: {r: 1, g: 0.02, b: 0.02, a: 1}
+  emptyHeartColor: {r: 0.12, g: 0.12, b: 0.12, a: 1}
+  leftMargin: 32
+  topMargin: 24
+  heartSpacing: 8
 --- !u!1 &1870184461364526018
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponHolder
   weaponSocket: {fileID: 4631726456222167554}
-  weaponAnimator: {fileID: 0}
   weaponAudioSource: {fileID: 0}
   defaultWeapon: {fileID: 11400000, guid: cdfb91354e14ecf4094356c31e7c8878, type: 2}
   testWeapon: {fileID: 11400000, guid: 22ee82010cdeb5545bedaca9916db173, type: 2}

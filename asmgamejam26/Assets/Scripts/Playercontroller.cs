@@ -25,9 +25,49 @@ public class Playercontroller : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
+        ConfigureFlashlight();
+        ConfigureHorrorAtmosphere();
+
         // Lock cursor to screen center
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    private void ConfigureFlashlight()
+    {
+        if (flashlight == null)
+        {
+            return;
+        }
+
+        flashlight.type = LightType.Spot;
+        flashlight.intensity = 35f;
+        flashlight.range = 25f;
+        flashlight.spotAngle = 55f;
+        flashlight.enabled = true;
+        flashlight.transform.localPosition = new Vector3(0f, 0f, 0.2f);
+    }
+
+    private void ConfigureHorrorAtmosphere()
+    {
+        RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Flat;
+        RenderSettings.ambientLight = new Color(0.0705882f, 0.0705882f, 0.0784314f, 1f);
+        RenderSettings.ambientIntensity = 1f;
+        RenderSettings.reflectionIntensity = 0f;
+        RenderSettings.fog = true;
+        RenderSettings.fogMode = FogMode.Linear;
+        RenderSettings.fogColor = new Color(0.0313726f, 0.0313726f, 0.0392157f, 1f);
+        RenderSettings.fogStartDistance = 6f;
+        RenderSettings.fogEndDistance = 35f;
+
+        Light[] sceneLights = FindObjectsByType<Light>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        foreach (Light sceneLight in sceneLights)
+        {
+            if (sceneLight.type == LightType.Directional)
+            {
+                sceneLight.enabled = false;
+            }
+        }
     }
 
     void Update()

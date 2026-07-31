@@ -3,8 +3,8 @@ using UnityEngine.Rendering;
 
 public sealed class Level1DarkEnvironment : MonoBehaviour
 {
-    private static readonly Color AmbientColor = new(0.008f, 0.008f, 0.008f, 1f);
-    private static readonly Color FogColor = new(0.004f, 0.006f, 0.01f, 1f);
+    private static readonly Color AmbientColor = new(0.0705882f, 0.0705882f, 0.0784314f, 1f);
+    private static readonly Color FogColor = new(0.0313726f, 0.0313726f, 0.0392157f, 1f);
 
     [SerializeField] private Camera targetCamera;
 
@@ -15,11 +15,11 @@ public sealed class Level1DarkEnvironment : MonoBehaviour
         RenderSettings.ambientIntensity = 1f;
         RenderSettings.reflectionIntensity = 0f;
         RenderSettings.fog = true;
-        RenderSettings.fogMode = FogMode.Exponential;
+        RenderSettings.fogMode = FogMode.Linear;
         RenderSettings.fogColor = FogColor;
-        RenderSettings.fogDensity = 0.05f;
-        RenderSettings.fogStartDistance = 0f;
-        RenderSettings.fogEndDistance = 15f;
+        RenderSettings.fogDensity = 0f;
+        RenderSettings.fogStartDistance = 6f;
+        RenderSettings.fogEndDistance = 35f;
 
         if (targetCamera != null)
         {
