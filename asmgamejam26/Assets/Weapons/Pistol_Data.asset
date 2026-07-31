@@ -18,10 +18,10 @@ MonoBehaviour:
   animatorOverride: {fileID: 22100000, guid: 43cbdc81913e9404fb0869146aed61ef, type: 2}
   damage: 40
   attackSpeed: 0
-  range: 1.5
+  range: 100
   modelPositionOffset: {x: 0.65, y: 0.34, z: 0.7}
   modelRotationOffset: {x: 0, y: 0, z: 0}
-  aimPositionOffset: {x: 0, y: 0.34, z: 0.5}
+  aimPositionOffset: {x: 0, y: 0.4, z: 0.5}
   aimRotationOffset: {x: 0, y: 0, z: 0}
   aimSpeed: 8
   swingSound: {fileID: 8300000, guid: 0e50a867ed318bc43acaa69f0ba18c94, type: 3}
@@ -31,3 +31,7 @@ MonoBehaviour:
   reloadDuration: 3
   reloadSound: {fileID: 8300000, guid: b60477accc3747f4ab6658a7ab3f2e96, type: 3}
   reloadPositionOffset: {x: 0, y: 0, z: 0}
+  firesProjectile: 0
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 40
+  projectileLifetime: 5

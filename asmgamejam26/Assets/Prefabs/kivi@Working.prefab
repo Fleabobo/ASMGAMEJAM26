@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &459838704780205104
+--- !u!1001 &6573739588862387319
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,21 +8,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 75134805184372068, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 02c1b19e2dca00141821507d92ba3772, type: 3}
+    - target: {fileID: 75134805184372068, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 026f15ed6132e2f4a9bb8fe19456363d, type: 2}
+    - target: {fileID: 75134805184372068, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1666350602492656669, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       propertyPath: moveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1666350602492656669, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
+      propertyPath: attackRange
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666350602492656669, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
+      propertyPath: monsterAnimator
+      value: 
+      objectReference: {fileID: 6498821697152022803}
     - target: {fileID: 6335089550002849566, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.74592
+      value: -0.8899162
       objectReference: {fileID: 0}
     - target: {fileID: 6335089550002849566, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0408294
+      value: -0.00000017881393
       objectReference: {fileID: 0}
     - target: {fileID: 6335089550002849566, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.5529
+      value: 35.766705
       objectReference: {fileID: 0}
     - target: {fileID: 6335089550002849566, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6674636794728144292, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       propertyPath: m_Name
-      value: kivi@T-Pose Variant
+      value: kivi@T-Pose Variant 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62,43 +82,26 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6674636794728144292, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4049319434241050236}
+      addedObject: {fileID: 3104322140678939699}
     - targetCorrespondingSourceObject: {fileID: 6674636794728144292, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 359269684402069848}
+      addedObject: {fileID: 7280706130039935710}
     - targetCorrespondingSourceObject: {fileID: 6674636794728144292, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8454416362824909779}
-    - targetCorrespondingSourceObject: {fileID: 6674636794728144292, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3609586337644684496}
+      addedObject: {fileID: 1024470654745241256}
   m_SourcePrefab: {fileID: 100100000, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
---- !u!1 &6539435637267988884 stripped
+--- !u!1 &548189691150957011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6674636794728144292, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
-  m_PrefabInstance: {fileID: 459838704780205104}
+  m_PrefabInstance: {fileID: 6573739588862387319}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4049319434241050236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6539435637267988884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 116e332a127c57c4e9ce33106650a610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  maxHealth: 100
-  currentHealth: 100
---- !u!136 &359269684402069848
+--- !u!136 &3104322140678939699
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6539435637267988884}
+  m_GameObject: {fileID: 548189691150957011}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -115,15 +118,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!54 &8454416362824909779
+--- !u!54 &7280706130039935710
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6539435637267988884}
+  m_GameObject: {fileID: 548189691150957011}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -142,25 +145,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &3609586337644684496
-Animator:
-  serializedVersion: 7
+--- !u!114 &1024470654745241256
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6539435637267988884}
+  m_GameObject: {fileID: 548189691150957011}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 901b620d544685d4e8186ee4458bac88, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116e332a127c57c4e9ce33106650a610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
+  maxHealth: 100
+  currentHealth: 100
+--- !u!95 &6498821697152022803 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 75134805184372068, guid: d3c53f46a5d43a04c805cf761dc34d60, type: 3}
+  m_PrefabInstance: {fileID: 6573739588862387319}
+  m_PrefabAsset: {fileID: 0}

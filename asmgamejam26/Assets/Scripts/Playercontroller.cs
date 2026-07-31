@@ -16,64 +16,23 @@ public class Playercontroller : MonoBehaviour
     [Header("Flashlight Settings")]
     public Light flashlight;
 
+    [Header("Footstep Settings")]
+    public AudioSource footstepAudioSource;
+    public AudioClip[] footstepSounds;
+    public float stepInterval = 0.5f; // seconds between steps while walking
+
+    // Internal variables
     private CharacterController controller;
     private Vector3 velocity;
     private float cameraPitch = 0.0f;
+    private float stepTimer;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
 
-        ConfigureFlashlight();
-        ConfigureHorrorAtmosphere();
-        gameObject.AddComponent<WallTorchSpawner>().SpawnTorches();
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-    }
-
-    private void ConfigureFlashlight()
-    {
-        if (flashlight == null)
-        {
-            return;
-        }
-
-        flashlight.type = LightType.Spot;
-        flashlight.intensity = 100f;
-        flashlight.range = 100f;
-        flashlight.spotAngle = 60f;
-        flashlight.innerSpotAngle = 35f;
-        flashlight.shadows = LightShadows.Soft;
-        flashlight.enabled = true;
-        flashlight.transform.localPosition = new Vector3(0f, 0f, 0.2f);
-    }
-
-    private void ConfigureHorrorAtmosphere()
-    {
-        RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Flat;
-        RenderSettings.ambientLight = new Color(0.18f, 0.20f, 0.24f, 1f);
-        RenderSettings.ambientIntensity = 1.5f;
-        RenderSettings.reflectionIntensity = 0f;
-        RenderSettings.fog = true;
-        RenderSettings.fogMode = FogMode.Linear;
-        RenderSettings.fogColor = new Color(0.18f, 0.20f, 0.24f, 1f);
-        RenderSettings.fogStartDistance = 50f;
-        RenderSettings.fogEndDistance = 250f;
-
-        Light[] sceneLights = FindObjectsByType<Light>(FindObjectsInactive.Include, FindObjectsSortMode.None);
-        foreach (Light sceneLight in sceneLights)
-        {
-            if (sceneLight.type == LightType.Directional && sceneLight != flashlight)
-            {
-                sceneLight.enabled = false;
-            }
-        }
-
-        if (flashlight != null)
-        {
-            flashlight.enabled = true;
-        }
     }
 
     void Update()
@@ -88,6 +47,7 @@ public class Playercontroller : MonoBehaviour
         if (cameraTransform == null || Mouse.current == null) return;
 
         Vector2 mouseDelta = Mouse.current.delta.ReadValue() * mouseSensitivity;
+
         transform.Rotate(Vector3.up * mouseDelta.x);
 
         cameraPitch -= mouseDelta.y;
@@ -118,6 +78,35 @@ public class Playercontroller : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        // Footsteps: only play while actually moving and grounded
+        bool isMoving = move.magnitude > 0.1f && isGrounded;
+        HandleFootsteps(isMoving);
+    }
+
+    void HandleFootsteps(bool isMoving)
+    {
+        if (!isMoving)
+        {
+            stepTimer = 0f; // reset so a step plays immediately next time you start moving
+            return;
+        }
+
+        stepTimer += Time.deltaTime;
+
+        if (stepTimer >= stepInterval)
+        {
+            PlayFootstep();
+            stepTimer = 0f;
+        }
+    }
+
+    void PlayFootstep()
+    {
+        if (footstepAudioSource == null || footstepSounds == null || footstepSounds.Length == 0) return;
+
+        AudioClip clip = footstepSounds[Random.Range(0, footstepSounds.Length)];
+        footstepAudioSource.PlayOneShot(clip);
     }
 
     void HandleFlashlight()
