@@ -3,18 +3,24 @@ using UnityEngine;
 public class MonsterAI : MonoBehaviour
 {
     [Header("References")]
-    public Transform player;            // drag Player object here
-    public Animator monsterAnimator;    // optional, for walk/attack animations
+    public Transform player;
+    public Animator monsterAnimator;
 
     [Header("Movement")]
     public float moveSpeed = 2f;
 
     [Header("Attack")]
-    public float attackRange = 1.2f;    // how close it needs to be to hit player
-    public float attackDamage = 1f;
-    public float attackCooldown = 1.5f; // seconds between hits
+    public float attackRange = 1.2f;
+    public int attackDamage = 1;
+    public float attackCooldown = 1.5f;
 
     private float attackTimer;
+
+    void Start()
+    {
+        if (monsterAnimator == null)
+            monsterAnimator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -25,9 +31,11 @@ public class MonsterAI : MonoBehaviour
         if (distance > attackRange)
         {
             MoveTowardsPlayer();
+            SetWalking(true);
         }
         else
         {
+            SetWalking(false);
             AttackPlayer();
         }
 
@@ -37,20 +45,20 @@ public class MonsterAI : MonoBehaviour
     void MoveTowardsPlayer()
     {
         Vector3 direction = (player.position - transform.position).normalized;
-        direction.y = 0f; // keep monster on the ground, don't tilt upward
+        direction.y = 0f;
 
         transform.position += direction * moveSpeed * Time.deltaTime;
         transform.rotation = Quaternion.LookRotation(direction);
+    }
 
-        // Optional: trigger walk animation if you have one
-        // monsterAnimator?.SetBool("IsWalking", true);
+    void SetWalking(bool walking)
+    {
+        if (monsterAnimator != null)
+            monsterAnimator.SetBool("IsWalking", walking);
     }
 
     void AttackPlayer()
     {
-        // Optional: trigger walk-stop
-        // monsterAnimator?.SetBool("IsWalking", false);
-
         if (attackTimer >= attackCooldown)
         {
             PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
@@ -59,10 +67,7 @@ public class MonsterAI : MonoBehaviour
                 playerHealth.TakeDamage(attackDamage);
             }
 
-            // Optional: trigger attack animation
-            // monsterAnimator?.SetTrigger("Attack");
-
-            attackTimer = 0f; // reset cooldown
+            attackTimer = 0f;
         }
     }
 }
