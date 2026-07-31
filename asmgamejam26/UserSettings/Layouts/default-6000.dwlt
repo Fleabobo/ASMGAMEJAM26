@@ -1447,6 +1447,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+    - Assets
     - Assets/Weapons
     m_Globs: []
     m_ProductIds: 
@@ -1457,6 +1458,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+  - Assets
   - Assets/Weapons
   m_LastFoldersGridSize: -1
   m_LastProjectPath: J:\GitHub\ASMGAMEJAM26\asmgamejam26
@@ -1467,6 +1469,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
     - m_rawData: 568105584918839768
+    - m_rawData: 568105584918839790
     m_LastClickedID:
       m_rawData: 568105584918839768
     m_ExpandedIDs:
@@ -1474,6 +1477,7 @@ MonoBehaviour:
     - m_rawData: 0
     - m_rawData: 568105584918839436
     - m_rawData: 568105584918849330
+    - m_rawData: 568105589213755456
     - m_rawData: 568105587066273791
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1538,6 +1542,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs:
     - m_rawData: 568105589213747644
+    - m_rawData: 568105584918838364
     m_LastClickedEntityId:
       m_rawData: 568105589213747644
     m_HadKeyboardFocusLastEvent: 1
