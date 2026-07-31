@@ -83,7 +83,6 @@ public class WeaponHolder : MonoBehaviour
             currentAnimator.runtimeAnimatorController = newWeapon.animatorOverride;
         }
 
-        // Grab muzzle flash if this weapon has one (guns will, melee won't)
         currentMuzzleFlash = currentModel.GetComponentInChildren<MuzzleFlash>();
 
         currentWeaponData = newWeapon;
@@ -106,7 +105,6 @@ public class WeaponHolder : MonoBehaviour
 
         PlaySound(currentWeaponData.swingSound);
 
-        // Trigger muzzle flash if this weapon has one
         if (currentMuzzleFlash != null)
             currentMuzzleFlash.Flash();
 
@@ -115,6 +113,23 @@ public class WeaponHolder : MonoBehaviour
             currentAmmo--;
         }
 
+        if (currentWeaponData.firesProjectile && currentWeaponData.projectilePrefab != null)
+        {
+            FireProjectile();
+        }
+        else
+        {
+            FireRaycast();
+        }
+
+        if (currentWeaponData.usesAmmo && currentAmmo <= 0)
+        {
+            StartCoroutine(ReloadRoutine());
+        }
+    }
+
+    void FireRaycast()
+    {
         RaycastHit hit;
         Vector3 origin = weaponSocket.position;
         Vector3 direction = transform.forward;
@@ -128,10 +143,24 @@ public class WeaponHolder : MonoBehaviour
                 PlaySound(currentWeaponData.hitSound);
             }
         }
+    }
 
-        if (currentWeaponData.usesAmmo && currentAmmo <= 0)
+    void FireProjectile()
+    {
+        // Spawn from the muzzle point if available, otherwise fall back to weaponSocket
+        Vector3 spawnPos = currentMuzzleFlash != null ? currentMuzzleFlash.transform.position : weaponSocket.position;
+        Quaternion spawnRot = Quaternion.LookRotation(transform.forward);
+
+        GameObject proj = Instantiate(currentWeaponData.projectilePrefab, spawnPos, spawnRot);
+
+        Projectile projScript = proj.GetComponent<Projectile>();
+        if (projScript != null)
         {
-            StartCoroutine(ReloadRoutine());
+            projScript.Init(currentWeaponData.damage, currentWeaponData.projectileSpeed, currentWeaponData.projectileLifetime);
+        }
+        else
+        {
+            Debug.LogWarning(currentWeaponData.weaponName + "'s projectile prefab has no Projectile script!");
         }
     }
 
