@@ -16,6 +16,7 @@ public class WeaponHolder : MonoBehaviour
 
     private GameObject currentModel;
     private Animator currentAnimator;
+    private MuzzleFlash currentMuzzleFlash;
     private WeaponData currentWeaponData;
     private bool isAiming;
     private int currentAmmo;
@@ -72,7 +73,6 @@ public class WeaponHolder : MonoBehaviour
         currentModel.transform.localPosition = newWeapon.modelPositionOffset;
         currentModel.transform.localRotation = Quaternion.Euler(newWeapon.modelRotationOffset);
 
-        // Animator lives on the child mesh object, not the root, so search children too
         currentAnimator = currentModel.GetComponentInChildren<Animator>();
         if (currentAnimator == null)
         {
@@ -81,12 +81,10 @@ public class WeaponHolder : MonoBehaviour
         else if (newWeapon.animatorOverride != null)
         {
             currentAnimator.runtimeAnimatorController = newWeapon.animatorOverride;
-            Debug.Log("Equipped " + newWeapon.weaponName + " with override: " + newWeapon.animatorOverride.name);
         }
-        else
-        {
-            Debug.LogWarning(newWeapon.weaponName + " has NO Animator Override assigned in its WeaponData!");
-        }
+
+        // Grab muzzle flash if this weapon has one (guns will, melee won't)
+        currentMuzzleFlash = currentModel.GetComponentInChildren<MuzzleFlash>();
 
         currentWeaponData = newWeapon;
         currentAmmo = newWeapon.maxAmmo;
@@ -107,6 +105,10 @@ public class WeaponHolder : MonoBehaviour
             currentAnimator.SetTrigger("Attack");
 
         PlaySound(currentWeaponData.swingSound);
+
+        // Trigger muzzle flash if this weapon has one
+        if (currentMuzzleFlash != null)
+            currentMuzzleFlash.Flash();
 
         if (currentWeaponData.usesAmmo)
         {
