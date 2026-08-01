@@ -5549,6 +5549,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2510564154500145292, guid: f91ed070f9dc2a74286da2c712a5e725, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510564154500145292, guid: f91ed070f9dc2a74286da2c712a5e725, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -5591,6 +5595,10 @@ PrefabInstance:
     - target: {fileID: 2979146480841169938, guid: f91ed070f9dc2a74286da2c712a5e725, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2993605748509103439, guid: f91ed070f9dc2a74286da2c712a5e725, type: 3}
+      propertyPath: mouseSensitivity
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5824317923297854778, guid: f91ed070f9dc2a74286da2c712a5e725, type: 3}
       propertyPath: defaultWeapon

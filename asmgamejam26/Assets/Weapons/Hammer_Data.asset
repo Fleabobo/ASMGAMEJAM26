@@ -18,7 +18,7 @@ MonoBehaviour:
   animatorOverride: {fileID: 0}
   damage: 45
   attackSpeed: 0
-  range: 1.8
+  range: 2.4
   modelPositionOffset: {x: 0.5, y: 0.3, z: 1}
   modelRotationOffset: {x: -90, y: -90, z: 0}
   aimPositionOffset: {x: 0.5, y: 0.3, z: 1}
