@@ -21,7 +21,7 @@ MonoBehaviour:
   range: 2
   modelPositionOffset: {x: 0, y: -0.2, z: 1.3}
   modelRotationOffset: {x: -180, y: -180, z: 0}
-  aimPositionOffset: {x: 0, y: 0, z: 0}
+  aimPositionOffset: {x: 0, y: -0.2, z: 1.3}
   aimRotationOffset: {x: -180, y: -180, z: 0}
   aimSpeed: 8
   swingSound: {fileID: 8300000, guid: cc036ce892e6d534cad9d5ffe7be1701, type: 3}
