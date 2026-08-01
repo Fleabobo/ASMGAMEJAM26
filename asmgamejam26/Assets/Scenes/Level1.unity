@@ -1521,7 +1521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAI
   player: {fileID: 834599689}
-  monsterAnimator: {fileID: 277349882}
+  monsterAnimator: {fileID: 0}
   moveSpeed: 3
   attackRange: 1.6
   attackDamage: 1
@@ -1794,7 +1794,7 @@ Transform:
   m_GameObject: {fileID: 324256084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.8914518, y: -0.61634976, z: 8.301796}
+  m_LocalPosition: {x: 4.68, y: -0.23, z: 75.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1987,7 +1987,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5875911892908890926, guid: 46e78ca228c5d3b468f131367d4060d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3984518
+      value: 25.7
       objectReference: {fileID: 0}
     - target: {fileID: 5875911892908890926, guid: 46e78ca228c5d3b468f131367d4060d8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1995,7 +1995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5875911892908890926, guid: 46e78ca228c5d3b468f131367d4060d8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0918349
+      value: 45.1
       objectReference: {fileID: 0}
     - target: {fileID: 5875911892908890926, guid: 46e78ca228c5d3b468f131367d4060d8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7985,15 +7985,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923342592905913193, guid: 7dd8d81f1227e2b4d99e019be58adf52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.8914518
+      value: 4.68
       objectReference: {fileID: 0}
     - target: {fileID: 923342592905913193, guid: 7dd8d81f1227e2b4d99e019be58adf52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.61634976
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 923342592905913193, guid: 7dd8d81f1227e2b4d99e019be58adf52, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.301796
+      value: 75.55
       objectReference: {fileID: 0}
     - target: {fileID: 923342592905913193, guid: 7dd8d81f1227e2b4d99e019be58adf52, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8327,7 +8327,7 @@ PrefabInstance:
       objectReference: {fileID: 834599689}
     - target: {fileID: 4746078201876165743, guid: fc3e3ddde35b2ca418b7290e42ff59e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.713981
+      value: 25.5
       objectReference: {fileID: 0}
     - target: {fileID: 4746078201876165743, guid: fc3e3ddde35b2ca418b7290e42ff59e6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8335,7 +8335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4746078201876165743, guid: fc3e3ddde35b2ca418b7290e42ff59e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.0100164
+      value: 86.4
       objectReference: {fileID: 0}
     - target: {fileID: 4746078201876165743, guid: fc3e3ddde35b2ca418b7290e42ff59e6, type: 3}
       propertyPath: m_LocalRotation.w
