@@ -1857,6 +1857,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &761016521
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.29922
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50322
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 341571948508362201, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8182457537154535771, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
+      propertyPath: m_Name
+      value: WaterDrops
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a03ec92e19b0b34083284401f83ebf3, type: 3}
 --- !u!1 &778263512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,6 +2655,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f91ed070f9dc2a74286da2c712a5e725, type: 3}
+--- !u!114 &1233065622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5824317923297854778, guid: f91ed070f9dc2a74286da2c712a5e725, type: 3}
+  m_PrefabInstance: {fileID: 1233065621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7db8af6efadae841baa1e966d3f107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponHolder
 --- !u!1001 &1305969450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4954,6 +5022,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1929785178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929785180}
+  - component: {fileID: 1929785179}
+  m_Layer: 0
+  m_Name: LevelWeaponSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1929785179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929785178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1f5f520871b044fb377eaf7addb4af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelWeaponSetup
+  weaponHolder: {fileID: 1233065622}
+  levelWeapon: {fileID: 11400000, guid: cdfb91354e14ecf4094356c31e7c8878, type: 2}
+--- !u!4 &1929785180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929785178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1670.1031, y: -0, z: 5046.485}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1982532387
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,6 +6115,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 761016521}
+  - {fileID: 1929785180}
   - {fileID: 2203007822278555679}
   - {fileID: 292346890533260885}
   - {fileID: 845187990240717755}
