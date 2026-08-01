@@ -6469,6 +6469,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5744310083500202205, guid: 823503f6ac556e24ba21906fccb48111, type: 3}
+      propertyPath: mouseSensitivity
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744310083500202205, guid: 823503f6ac556e24ba21906fccb48111, type: 3}
       propertyPath: footstepAudioSource
       value: 
       objectReference: {fileID: 421425766}

@@ -1046,6 +1046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Newest
       objectReference: {fileID: 0}
+    - target: {fileID: 8961680042420805444, guid: 86b0049cd1f23144b93473f5e37bfa52, type: 3}
+      propertyPath: mouseSensitivity
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8974875698462479897, guid: 86b0049cd1f23144b93473f5e37bfa52, type: 3}
       propertyPath: m_LocalPosition.x
       value: -206.2965

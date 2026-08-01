@@ -6408,6 +6408,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 970422612}
     - target: {fileID: 5053949298879502068, guid: adec4f35f62211848a0924ab8d497df6, type: 3}
+      propertyPath: mouseSensitivity
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053949298879502068, guid: adec4f35f62211848a0924ab8d497df6, type: 3}
       propertyPath: enemyLayer.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
