@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 337143192}
   - component: {fileID: 337143191}
   - component: {fileID: 337143190}
-  - component: {fileID: 337143193}
+  - component: {fileID: 337143189}
   m_Layer: 0
   m_Name: Ocean
   m_TagString: Untagged
@@ -138,6 +138,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &337143189
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337143188}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &337143190
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -204,27 +226,12 @@ Transform:
   m_GameObject: {fileID: 337143188}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.63802, y: -0.2, z: 7.8983}
+  m_LocalPosition: {x: -1.63802, y: 1.45, z: 7.8983}
   m_LocalScale: {x: 10000, y: 10000, z: 10000}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!114 &337143193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337143188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e40ab19f1f63cd94b846c671a40fd8d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InstaKillZone
-  playerTag: Player
-=======
 --- !u!1001 &682169198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -286,7 +293,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c733380197021744891e2856f4d331e1, type: 3}
->>>>>>> 71fb56e503fb220d7f61b908f3d19bae5e46c4a2
 --- !u!1001 &802652353
 PrefabInstance:
   m_ObjectHideFlags: 0
