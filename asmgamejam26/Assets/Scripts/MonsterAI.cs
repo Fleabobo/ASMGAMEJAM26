@@ -6,6 +6,9 @@ public class MonsterAI : MonoBehaviour
     public Transform player;
     public Animator monsterAnimator;
 
+    //public GameObject Pivot;
+
+
     [Header("Movement")]
     public float moveSpeed = 2f;
 
@@ -48,6 +51,7 @@ public class MonsterAI : MonoBehaviour
         direction.y = 0f;
 
         transform.position += direction * moveSpeed * Time.deltaTime;
+        
         transform.rotation = Quaternion.LookRotation(direction);
     }
 
