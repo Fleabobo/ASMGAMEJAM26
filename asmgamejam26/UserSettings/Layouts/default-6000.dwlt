@@ -38,8 +38,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.ContainerWindow
   m_PixelRect:
     serializedVersion: 2
-    x: 2198
-    y: 261
+    x: 2098
+    y: -207
     width: 725
     height: 555
   m_ShowMode: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -91,8 +91,8 @@ MonoBehaviour:
     y: 0
     width: 390
     height: 627
-  m_MinSize: {x: 390, y: 390}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 390, y: 416}
+  m_MaxSize: {x: 4000, y: 4026}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 390, y: 416}
   m_MaxSize: {x: 4000, y: 4026}
   vertical: 0
-  controlID: 5461
+  controlID: 60
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -142,8 +142,8 @@ MonoBehaviour:
     y: 0
     width: 725
     height: 555
-  m_MinSize: {x: 725, y: 426}
-  m_MaxSize: {x: 4000, y: 4026}
+  m_MinSize: {x: 725, y: 400}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 725, y: 426}
   m_MaxSize: {x: 4000, y: 4026}
   vertical: 0
-  controlID: 5419
+  controlID: 33
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 109
+  controlID: 176
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 110
+  controlID: 177
   draggingID: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -317,11 +317,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1466
-    height: 553
+    height: 549
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 111
+  controlID: 178
   draggingID: 0
 --- !u!114 &14
 MonoBehaviour:
@@ -341,7 +341,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 323
-    height: 553
+    height: 549
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 22}
@@ -367,7 +367,7 @@ MonoBehaviour:
     x: 323
     y: 0
     width: 1143
-    height: 553
+    height: 549
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 23}
@@ -392,9 +392,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 553
+    y: 549
     width: 1466
-    height: 380
+    height: 384
   m_MinSize: {x: 231, y: 276}
   m_MaxSize: {x: 10001, y: 10026}
   m_ActualView: {fileID: 24}
@@ -490,8 +490,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Build Profiles\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2198
-    y: 261
+    x: 2098
+    y: -207
     width: 725
     height: 529
   m_SerializedDataModeController:
@@ -906,7 +906,7 @@ MonoBehaviour:
     x: 0
     y: 79
     width: 322
-    height: 527
+    height: 523
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -924,69 +924,45 @@ MonoBehaviour:
     m_DynamicPanelBehaviorModified: 0
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 534}
+      scrollPos: {x: 0, y: 426}
       m_SelectedIDs:
-      - m_rawData: 568105589213688414
+      - m_rawData: 568105584918863606
       m_LastClickedID:
-        m_rawData: 568105589213688414
+        m_rawData: 0
       m_ExpandedIDs:
-      - m_rawData: 568105589213691004
-      - m_rawData: 568105589213693076
-      - m_rawData: 568105589213695132
-      - m_rawData: 568105589213697268
-      - m_rawData: 568105589213699240
-      - m_rawData: 568105589213700950
-      - m_rawData: 568105589213701348
-      - m_rawData: 568105589213701362
-      - m_rawData: 568105589213702470
-      - m_rawData: 568105589213703526
-      - m_rawData: 568105589213705328
-      - m_rawData: 568105589213707130
-      - m_rawData: 568105589213708168
-      - m_rawData: 568105589213708372
-      - m_rawData: 568105589213708532
-      - m_rawData: 568105589213708550
-      - m_rawData: 568105589213708586
-      - m_rawData: 568105589213713118
-      - m_rawData: 568105589213716628
-      - m_rawData: 568105589213719306
-      - m_rawData: 568105589213722474
-      - m_rawData: 568105589213722998
-      - m_rawData: 568105589213723426
-      - m_rawData: 568105589213725336
-      - m_rawData: 568105589213725738
-      - m_rawData: 568105589213726014
-      - m_rawData: 568105589213726198
-      - m_rawData: 568105589213726478
-      - m_rawData: 568105589213726744
-      - m_rawData: 568105589213727162
-      - m_rawData: 568105589213728200
-      - m_rawData: 568105589213728396
-      - m_rawData: 568105589213728556
-      - m_rawData: 568105589213728574
-      - m_rawData: 568105589213728606
-      - m_rawData: 568105589213728664
-      - m_rawData: 568105589213729698
-      - m_rawData: 568105589213730736
-      - m_rawData: 568105589213730932
-      - m_rawData: 568105589213731092
-      - m_rawData: 568105589213731110
-      - m_rawData: 568105589213731142
-      - m_rawData: 568105589213731200
-      - m_rawData: 568105589213734978
-      - m_rawData: 568105589213734982
-      - m_rawData: 568105589213735562
-      - m_rawData: 568105589213735994
-      - m_rawData: 568105589213736334
-      - m_rawData: 568105589213736760
-      - m_rawData: 568105589213737176
-      - m_rawData: 568105589213737512
-      - m_rawData: 568105589213739794
-      - m_rawData: 568105589213739940
-      - m_rawData: 568105589213739956
-      - m_rawData: 568105589213753124
-      - m_rawData: 568105589213753920
-      - m_rawData: 568105589213754358
+      - m_rawData: 568105589213707884
+      - m_rawData: 568105589213712670
+      - m_rawData: 568105589213718688
+      - m_rawData: 568105589213731934
+      - m_rawData: 568105589213733128
+      - m_rawData: 568105589213734810
+      - m_rawData: 568105589213735202
+      - m_rawData: 568105589213735500
+      - m_rawData: 568105589213736608
+      - m_rawData: 568105589213737664
+      - m_rawData: 568105589213739466
+      - m_rawData: 568105589213741270
+      - m_rawData: 568105589213742308
+      - m_rawData: 568105589213742512
+      - m_rawData: 568105589213742672
+      - m_rawData: 568105589213742690
+      - m_rawData: 568105589213742726
+      - m_rawData: 568105589213744964
+      - m_rawData: 568105589213746304
+      - m_rawData: 568105589213747522
+      - m_rawData: 568105589213748792
+      - m_rawData: 568105589213750056
+      - m_rawData: 568105589213750284
+      - m_rawData: 568105589213750448
+      - m_rawData: 568105589213750612
+      - m_rawData: 568105589213750776
+      - m_rawData: 568105589213752046
+      - m_rawData: 568105589213752218
+      - m_rawData: 568105589213752382
+      - m_rawData: 568105589213752720
+      - m_rawData: 568105589213753184
+      - m_rawData: 568105589213753368
+      - m_rawData: 568105589213753568
       - m_rawData: 568105589213756068
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1038,7 +1014,7 @@ MonoBehaviour:
     x: 323
     y: 79
     width: 1141
-    height: 527
+    height: 523
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1443,9 +1419,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 5.0801344, y: 4.801402, z: 9.480724}
+    m_Target: {x: 20.798014, y: 2.2799587, z: 27.990908}
     speed: 2
-    m_Value: {x: 5.0801344, y: 4.801402, z: 9.480724}
+    m_Value: {x: 20.798014, y: 2.2799587, z: 27.990908}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1492,13 +1468,13 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: -0.12453571, y: 0.4248206, z: -0.05914734, w: -0.89470273}
+    m_Target: {x: 0.06403919, y: 0.42394987, z: -0.030076977, w: 0.90291846}
     speed: 2
-    m_Value: {x: -0.12185266, y: 0.42500186, z: -0.05787345, w: -0.8950844}
+    m_Value: {x: 0.0611562, y: 0.429449, z: -0.029172441, w: 0.9005457}
   m_Size:
-    m_Target: 5.3837385
+    m_Target: 4.242086
     speed: 2
-    m_Value: 5.6374226
+    m_Value: 4.242086
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1556,9 +1532,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 632
+    y: 628
     width: 1465
-    height: 354
+    height: 358
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1604,17 +1580,17 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_rawData: 568105584918844436
+    - m_rawData: 568105584918842480
     m_LastClickedID:
-      m_rawData: 568105584918844436
+      m_rawData: 568105584918842480
     m_ExpandedIDs:
-    - m_rawData: 568105589213754416
+    - m_rawData: 568105589213753650
     - m_rawData: 0
-    - m_rawData: 568105584918844048
+    - m_rawData: 568105584918841880
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Materials
+      m_OriginalName: Materials
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1622,10 +1598,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_rawData: 0
+        m_rawData: 568105584918842476
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 16}
@@ -1644,7 +1620,7 @@ MonoBehaviour:
       m_rawData: 0
     m_ExpandedIDs:
     - m_rawData: 0
-    - m_rawData: 568105584918844048
+    - m_rawData: 568105584918841880
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1673,12 +1649,13 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_rawData: 568105589213688414
+    - m_rawData: 568105584918863606
     m_LastClickedEntityId:
-      m_rawData: 568105589213688414
+      m_rawData: 568105584918863606
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_rawData: 568105584918839868
+    - m_rawData: 568105584918842478
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
