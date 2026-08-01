@@ -21,16 +21,19 @@ EditorUserSettings:
       value: 05050451560251080e580a7a14210b444f4e4b792f7173657f284961b4b2676b
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 57050451520d0f0a55085f2042720e4447161929797b7033797c4d63b1e5356c
-      flags: 0
-    RecentlyUsedSceneGuid-4:
       value: 5106525400035d5a095f582013765c44431549797d7d7e647b7f1931bbe5676c
       flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 57050451520d0f0a55085f2042720e4447161929797b7033797c4d63b1e5356c
+      flags: 0
     RecentlyUsedSceneGuid-5:
-      value: 575305535d5359080c0a5572407b0b4444151a7a2a717e627f2a456ae3b8646d
+      value: 565057025051590a5c5a5d26407b0e44141619787f7a77647c794d65e4b6633b
       flags: 0
     RecentlyUsedSceneGuid-6:
-      value: 565057025051590a5c5a5d26407b0e44141619787f7a77647c794d65e4b6633b
+      value: 575305535d5359080c0a5572407b0b4444151a7a2a717e627f2a456ae3b8646d
+      flags: 0
+    lightmappingBakingProfile:
+      value: 51
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650

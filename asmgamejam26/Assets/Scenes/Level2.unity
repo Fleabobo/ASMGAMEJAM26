@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.032
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &9320994
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 73.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644525381990303431, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_Name
+      value: Level1_BioluminescentPool (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0319fec4c563954fbac03270e059015, type: 3}
 --- !u!1 &20152180
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +402,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &52425345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644525381990303431, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_Name
+      value: Level1_BioluminescentPool (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0319fec4c563954fbac03270e059015, type: 3}
 --- !u!1001 &62961621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2043,6 +2157,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &658924781
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 73.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644525381990303431, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_Name
+      value: Level1_BioluminescentPool (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0319fec4c563954fbac03270e059015, type: 3}
 --- !u!1 &705962163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2377,120 @@ PrefabInstance:
     - target: {fileID: 6644525381990303431, guid: f0319fec4c563954fbac03270e059015, type: 3}
       propertyPath: m_Name
       value: Level1_BioluminescentPool (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0319fec4c563954fbac03270e059015, type: 3}
+--- !u!1001 &821773587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644525381990303431, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_Name
+      value: Level1_BioluminescentPool (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0319fec4c563954fbac03270e059015, type: 3}
+--- !u!1001 &840974059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 73.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644525381990303431, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_Name
+      value: Level1_BioluminescentPool (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2495,6 +2780,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dd8d81f1227e2b4d99e019be58adf52, type: 3}
+--- !u!1001 &1058142858
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.142
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 101.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588029506302163014, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644525381990303431, guid: f0319fec4c563954fbac03270e059015, type: 3}
+      propertyPath: m_Name
+      value: Level1_BioluminescentPool (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0319fec4c563954fbac03270e059015, type: 3}
 --- !u!1001 &1107654011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4664,13 +5006,19 @@ SceneRoots:
   - {fileID: 379755114}
   - {fileID: 1355596035}
   - {fileID: 1107654011}
+  - {fileID: 52425345}
+  - {fileID: 821773587}
   - {fileID: 2039736373}
   - {fileID: 786683714}
   - {fileID: 62961621}
   - {fileID: 239825928}
+  - {fileID: 9320994}
+  - {fileID: 658924781}
+  - {fileID: 840974059}
   - {fileID: 1795365410}
   - {fileID: 452678327}
   - {fileID: 1823717905}
+  - {fileID: 1058142858}
   - {fileID: 2110858691}
   - {fileID: 1121367456}
   - {fileID: 1397562785}
