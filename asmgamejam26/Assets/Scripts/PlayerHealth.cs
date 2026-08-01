@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -14,20 +15,22 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip damageSound;
 
     [Header("Respawn")]
-    public Transform respawnPoint;
-    public float respawnDelay = 1.5f;
+    [Tooltip("Delay in seconds before the level reloads after death.")]
+    public float respawnDelay = 1f;
 
     public int CurrentHearts => currentHearts;
+    public bool IsDead => isDead;
     public event Action<int, int> HealthChanged;
     public event Action Died;
-    public event Action Respawned;
 
     private bool isDead;
+    private Playercontroller playercontroller;
 
     private void Awake()
     {
         maxHearts = Mathf.Max(1, maxHearts);
         currentHearts = maxHearts;
+        playercontroller = GetComponent<Playercontroller>();
     }
 
     private void Start()
@@ -96,35 +99,28 @@ public class PlayerHealth : MonoBehaviour
         }
 
         isDead = true;
+
+        if (playercontroller != null)
+        {
+            playercontroller.inputLocked = true;
+        }
+
         Debug.Log("Player died", this);
         Died?.Invoke();
 
-        Invoke(nameof(Respawn), respawnDelay);
-    }
-
-    private void Respawn()
-    {
-        if (respawnPoint != null)
+        if (respawnDelay <= 0f)
         {
-            // Reset physics velocity if a Rigidbody is present, so the player
-            // doesn't keep falling/flying after teleporting back.
-            Rigidbody rb = GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                rb.linearVelocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-            }
-
-            transform.position = respawnPoint.position;
-            transform.rotation = respawnPoint.rotation;
+            ReloadLevel();
         }
         else
         {
-            Debug.LogWarning("PlayerHealth: No respawnPoint assigned, player will restore health in place.", this);
+            Invoke(nameof(ReloadLevel), respawnDelay);
         }
+    }
 
-        isDead = false;
-        RestoreFullHealth();
-        Respawned?.Invoke();
+    private void ReloadLevel()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }

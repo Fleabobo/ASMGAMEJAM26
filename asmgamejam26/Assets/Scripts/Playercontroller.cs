@@ -27,6 +27,9 @@ public class Playercontroller : MonoBehaviour
     private float cameraPitch = 0.0f;
     private float stepTimer;
 
+    // Set true (e.g. by PlayerHealth) to freeze movement/look, such as while dead.
+    public bool inputLocked = false;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -37,6 +40,8 @@ public class Playercontroller : MonoBehaviour
 
     void Update()
     {
+        if (inputLocked) return;
+
         HandleLook();
         HandleMovement();
         HandleFlashlight();
@@ -115,5 +120,33 @@ public class Playercontroller : MonoBehaviour
         {
             flashlight.enabled = !flashlight.enabled;
         }
+    }
+
+    /// <summary>
+    /// Safely moves the player to a new position/rotation.
+    /// CharacterController must be disabled while repositioning directly,
+    /// otherwise Unity's collision resolution can block or fight the move.
+    /// Also clears any accumulated fall/gravity velocity.
+    /// </summary>
+    public void Teleport(Vector3 position, Quaternion rotation)
+    {
+        if (controller == null)
+        {
+            controller = GetComponent<CharacterController>();
+        }
+
+        controller.enabled = false;
+
+        transform.position = position;
+        transform.rotation = rotation;
+
+        velocity = Vector3.zero;
+        cameraPitch = 0f;
+        if (cameraTransform != null)
+        {
+            cameraTransform.localRotation = Quaternion.identity;
+        }
+
+        controller.enabled = true;
     }
 }
