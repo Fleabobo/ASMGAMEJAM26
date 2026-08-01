@@ -11,9 +11,6 @@ public class WeaponHolder : MonoBehaviour
     [Header("Default")]
     public WeaponData defaultWeapon;
 
-    [Header("TEST ONLY - remove later")]
-    public WeaponData testWeapon;
-
     private GameObject currentModel;
     private Animator currentAnimator;
     private MuzzleFlash currentMuzzleFlash;
@@ -30,11 +27,6 @@ public class WeaponHolder : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.pKey.wasPressedThisFrame && testWeapon != null)
-        {
-            EquipWeapon(testWeapon);
-        }
-
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Attack();
@@ -147,7 +139,6 @@ public class WeaponHolder : MonoBehaviour
 
     void FireProjectile()
     {
-        // Spawn from the muzzle point if available, otherwise fall back to weaponSocket
         Vector3 spawnPos = currentMuzzleFlash != null ? currentMuzzleFlash.transform.position : weaponSocket.position;
         Quaternion spawnRot = Quaternion.LookRotation(transform.forward);
 
