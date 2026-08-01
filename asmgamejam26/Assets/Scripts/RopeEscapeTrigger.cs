@@ -42,12 +42,8 @@ public class RopeEscapeTrigger : MonoBehaviour
         playerCamera.SetActive(false);
         cutsceneCamera.SetActive(true);
 
-        StartCoroutine(LoadCreditsAfterDelay());
-    }
-
-    IEnumerator LoadCreditsAfterDelay()
-    {
-        yield return new WaitForSeconds(delayBeforeCredits);
-        SceneManager.LoadScene(creditsSceneName);
+        // Run the coroutine on the cutscene camera instead of this object,
+        // since this object (rope) is about to be/already inactive.
+        CreditsLoader.Instance.LoadCreditsAfterDelay(creditsSceneName, delayBeforeCredits);
     }
 }
